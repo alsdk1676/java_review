@@ -1,5 +1,5 @@
 package castingTask1;
 
-public class Video {
+public class Vehicle {
 
 }
