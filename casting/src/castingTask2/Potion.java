@@ -4,7 +4,10 @@ public class Potion extends MagicItem {
 	
 	public Potion() {;}
 	
-	
+
+	public Potion(String name, int grade, int mana) {
+		super(name, grade, mana);
+	}
 
 
 	@Override

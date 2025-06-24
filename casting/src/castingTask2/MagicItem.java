@@ -6,14 +6,9 @@ public class MagicItem {
 	String name;
 	int grade;
 	int mana;
-	
-	static {
-		System.out.println("아이템을 사용했습니다.");
-	}
-	
+
 	public MagicItem() {;}
 	
-
 	public MagicItem(String name, int grade, int mana) {
 		this.name = name;
 		this.grade = grade;
