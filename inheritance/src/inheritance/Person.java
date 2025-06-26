@@ -1,11 +1,7 @@
 package inheritance;
 
 class Person {
-	// Person 클래스
-	// 이름, 나이, 주소, 핸드폰 번호
-	// work 일을 한다.
-	// sleep 잠을 잔다.
-	// eat 세 끼를 먹는다.
+	
 	String name;
 	int age;
 	String address;

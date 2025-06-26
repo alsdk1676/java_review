@@ -1,46 +1,54 @@
 package inheritance;
 
-// 상속 및 분리 실습
-// Person 클래스
-// 이름, 나이, 주소, 핸드폰 번호
-// work 일을 한다.
-// sleep 잠을 잔다.
-// eat 세 끼를 먹는다.
+class Phone {
+	String brand;
+	long price;
+	
+	public Phone() {;}
 
-// Student 클래스
-// 인스타아이디
-// work 아르바이트를 한다.
-// sleep 수업 시간에 잠을 잔다.
-// eat 아침을 거른다.
+	public Phone(String brand, long price) {
+		this.brand = brand;
+		this.price = price;
+	}
+	
+	void turnOn() {
+		System.out.println("전원 버튼을 눌러 킴");
+	}
+	
+	void turnOff() {
+		System.out.println("전원 버튼을 눌러 끔");
+	}
+	
+}
 
-// Employee 클래스
-// 비상금
-// work 하루 종일 일을 한다.
-// sleep 잠을 설친다.
-// eat 야식을 먹는다.
+class SmartPhone extends Phone {
+	
+	public SmartPhone() {;}
 
-//메인 메서드 생성 후 객체화
-//각 메서드 출력하기
-
+	public SmartPhone(String brand, long price) {
+		super(brand, price);
+	}
+	
+	@Override
+	void turnOn() {
+		System.out.println("음성 인식으로 전원 킴");
+	}
+	
+	@Override
+	void turnOff() {
+		System.out.println("화면 터치로 전원 끔");
+	}
+	
+}
 
 public class InheritanceTask2 {
 	public static void main(String[] args) {
-		Person person = new Person("홍길동", 20, "서울시 강남", "01000000000");
-		person.work();
-		person.eat();
-		person.sleep();
-		
-		Student student = new Student("서민아", 15, "서울시 역삼동", "01000000000", "mina0000");
-		student.work();
-		student.eat();
-		student.sleep();
-		
-		Employee employee = new Employee();
-		employee.work();
-		employee.sleep();
-		employee.eat();
-		
+		Phone iphone = new Phone("애플", 2000000);
+		SmartPhone galaxy = new SmartPhone("삼성", 1000000);
+		iphone.turnOn();
+		iphone.turnOff();
+		galaxy.turnOn();
+		galaxy.turnOff();
 	}
-	
 
 }

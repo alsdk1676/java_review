@@ -1,11 +1,7 @@
 package inheritance;
 
 class Student extends Person {
-	// Student 클래스
-	// 인스타아이디
-	// work 아르바이트를 한다.
-	// sleep 수업 시간에 잠을 잔다.
-	// eat 아침을 거른다.
+	
 	String instaID;
 	
 	public Student() {;}
