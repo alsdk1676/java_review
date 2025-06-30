@@ -32,7 +32,7 @@ public class Server02 {
 				String inMessage = in.readLine();
 				System.out.println("클라이언트 : " + inMessage);
 				
-				System.out.println("서버에서 클라이언트로 보내기 : ");
+				System.out.println("서버 : ");
 				String outMessage = sc.nextLine();
 				out.write(outMessage + "\n");
 				out.flush(); 
