@@ -7,8 +7,8 @@ import java.net.UnknownHostException;
 
 public class Client {
 	public static void main(String[] args) throws IOException {
-		Socket socket = null;
 		
+		Socket socket = null;
 		PrintWriter writer = null;
 		String serverIp = "";
 		
