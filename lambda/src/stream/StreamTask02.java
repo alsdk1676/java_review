@@ -29,12 +29,6 @@ public class StreamTask02 {
 		
 //		4) 정수를 한글로 변경
 //		"1024" -> 일공이사
-//		"1" -> "일"
-//		공통점 : 문자열
-//		공통점을 만든다
-//		"공 ~ 구"
-//		문자열 "1", 인덱스 1
-//		"일"
 		String hangle2 = "공일이삼사오육칠팔구";
 		String data2 = "1";
 		hangle2.charAt(Integer.parseInt(data2));
