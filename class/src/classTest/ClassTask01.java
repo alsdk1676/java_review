@@ -40,9 +40,9 @@ class Customer {
 	}
 }
 
-public class ClassTask1 {
+public class ClassTask01 {
 	
-	public ClassTask1() {;}
+	public ClassTask01() {;}
 	
 	
 	public static void main(String[] args) {
